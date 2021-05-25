@@ -17,7 +17,7 @@ setuptools.setup(
     url='https://github.com/yzhang-dev/PomodoroPy',
     download_url='https://github.com/yzhang-dev/PomodoroPy',
     packages=setuptools.find_packages(),
-    scripts=['pomodoropy.py']
+    scripts=['pomodoropy.py'],
     keywords=[
         'pomodoro',
         'pomodoro-timer',
