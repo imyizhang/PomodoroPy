@@ -39,7 +39,8 @@ def parse_args():
     return args
 
 
-def main(args):
+def main():
+    args = parse_args()
     try:
         while True:
             # step 1. pick a task
@@ -115,5 +116,4 @@ def save(task, interval, rating, file='./pomodoro.log'):
 
 
 if __name__ == '__main__':
-    args = parse_args()
-    main(args)
+    main()
