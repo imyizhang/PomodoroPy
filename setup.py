@@ -9,7 +9,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 setuptools.setup(
     name='PomodoroPy',
     version='0.0.1',
-    description='A simple command line pomodoro timer',
+    description='A simple command-line Pomodoro timer',
     author='Yi Zhang',
     author_email='yizhang.dev@gmail.com',
     long_description=README,
