@@ -27,10 +27,10 @@ $ pomodoropy -h
 * macOS
 
   ```bash
-  $ brew install terminal-notifier 
+  $ brew install terminal-notifier
   ```
 
-  
+
 
 #### Voice Notification
 
@@ -40,11 +40,10 @@ $ pomodoropy -h
   $ say -v ?
   ```
 
-  
+
 
 ### Install PomodoroPy
 
 ```bash
 $ pip install pomodoropy
 ```
-

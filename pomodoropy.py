@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
-#<https://en.wikipedia.org/wiki/Pomodoro_Technique>
+# <https://en.wikipedia.org/wiki/Pomodoro_Technique>
 
 import argparse
 import sys
@@ -12,7 +12,7 @@ import subprocess
 def parse_args():
     parser = argparse.ArgumentParser(
         prog='🍅',
-        description='🍅 pomodoro timer'
+        description='🍅 Pomodoro timer'
     )
     parser.add_argument(
         '-w',
