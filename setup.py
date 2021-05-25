@@ -8,7 +8,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setuptools.setup(
     name='PomodoroPy',
-    version='0.0.1',
+    version='0.0.2',
     description='A simple command-line Pomodoro timer',
     author='Yi Zhang',
     author_email='yizhang.dev@gmail.com',
@@ -18,6 +18,7 @@ setuptools.setup(
     download_url='https://github.com/yzhang-dev/PomodoroPy',
     packages=setuptools.find_packages(),
     scripts=['pomodoropy.py'],
+    entry_points={'console_scripts': ['pomodoro = pomodoropy:main']},
     keywords=[
         'pomodoro',
         'pomodoro-timer',
@@ -26,7 +27,7 @@ setuptools.setup(
     ],
     classifiers=[
         'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
+        'Operating System :: MacOS',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
     ],
