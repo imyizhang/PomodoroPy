@@ -8,7 +8,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setuptools.setup(
     name='PomodoroPy',
-    version='0.0.4',
+    version='0.0.5',
     description='A simple command-line Pomodoro timer',
     author='Yi Zhang',
     author_email='yizhang.dev@gmail.com',
@@ -33,4 +33,7 @@ setuptools.setup(
     ],
     license='MIT',
     python_requires='>=3.7',
+    install_requires=[
+        'streaminput',
+    ],
 )

@@ -3,38 +3,37 @@
 PomodoroPy is
 
 * a simple command-line Pomodoro timer
-* written in Python (3.7+) Standard Library
 
 PomodoroPy supports to
 
 * quickly set up a series of repeatable Pomodoros
-* log the historical Pomodoros including corresponding task, time interval and self-rating
+* log the historical Pomodoros including corresponding tag, task, time interval, self-rating and comment
+* start session with interactive mode, customizing a Pomodoro each round
+* automatically restart another Pomodoro until self-rating answered, where time interval is accumulatively counted
 
 
 
 ## Quickstart
 
 ```bash
-$ pomodoropy -h
+$ pomodoro -h
 ```
 
 
 
 ### Requirements
 
-#### Terminal Notification
+#### Desktop Notification
 
-* macOS
+* Install [`terminal-notifier`](https://github.com/julienXX/terminal-notifier) for macOS, e.g.,
 
   ```bash
   $ brew install terminal-notifier
   ```
 
-
-
 #### Voice Notification
 
-* macOS
+* Choose voice notification sound with macOS built-in `say`
 
   ```bash
   $ say -v ?
@@ -43,6 +42,8 @@ $ pomodoropy -h
 
 
 ### Install PomodoroPy
+
+`pip` can handle all other package dependencies.
 
 ```bash
 $ pip install pomodoropy
