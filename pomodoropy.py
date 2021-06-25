@@ -33,18 +33,17 @@ class Pomodoro(object):
                 self.interval = 0
                 # step 1. pick a task
                 self.task = input("💡 What's your task for the Pomodoro?\n  ")
-                self.tag = input('📌 Would you like to put a tag on it? Press Enter to skip.\n  ')
+                self.tag = streaminput('📌 Would you like to put a tag on it? Press Enter to skip.\n  ', self.timeout)
                 # step 2. set a timer for work, focus on work until time is up
                 # rate your focus in the end
                 if self.interactive:
                     self.work = int(input('⏰ How long (in minutes) would you like to work? Input an integer.\n  '))
-                while self.rating is None:
-                    print('🍅 Please focus on work for {} minutes, press Ctrl+C to abort.'.format(self.work))
-                    self.timer('🍅', self.work, self.voice, "It's time to have a rest.")
-                    self.interval += self.work
-                    self.rating = streaminput('🎉 How was your focus (1-10)?\n  ', self.timeout)
+                print('🍅 Please focus on work for {} minutes, press Ctrl+C to abort.'.format(self.work))
+                self.timer('🍅', self.work, self.voice, "It's time to have a rest.")
+                self.interval += self.work
+                self.rating = input('🎉 How was your focus (1-10)?\n  ')
                 # step 3. make any comments
-                self.comment = input('💭 Would you like to make any comments? Press Enter to skip.\n  ')
+                self.comment = streaminput('💭 Would you like to make any comments? Press Enter to skip.\n  ', self.timeout)
                 # step 4. log the pomodoro
                 self.save(self.tag, self.task, self.interval, self.rating, self.comment)
                 # step 5. set a timer for rest, have a rest until time is up
